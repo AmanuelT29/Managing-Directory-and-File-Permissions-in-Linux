@@ -43,7 +43,7 @@ Here’s how you’ll do this task: First, you’ll check the user and group per
 
   ### Task 3. Change file permissions on a hidden file
   
-The research team at my organization recently archived `.project_x.txt`. They do not want anyone to have write access to this file, but the user and group should have read access. 
+My organization recently archived `.project_x.txt`. They do not want anyone to have write access to this file, but the user and group should have read access. 
 
 I reviewed the permissions of the `.project_x.txt` file and found that both the **user** and **group** had **write** access, while only the **user** had **read** access. To comply with policy, my task is to remove **write** privileges from both the **user** and **group**, and grant **read** permission to the **group**.
 
