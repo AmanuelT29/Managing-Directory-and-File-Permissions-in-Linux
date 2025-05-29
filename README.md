@@ -5,6 +5,8 @@
   # Managing Directory and File Permissions in Linux
 
   ## Platform and Tools Used
+  - **Google CyberSecurity labs**
+  - **Linux**
 
   ## Scenario:
   In this scenario, you must examine and manage the permissions on the files in the `/home/researcher2/projects` directory for the `researcher2` user.
@@ -18,13 +20,13 @@ Here’s how you’ll do this task: First, you’ll check the user and group per
 
   ### Task 1. Check file and directory details
 
-  In this task, I explored the permissions of the projects directory and the files it contains, including hidden files:
+  In this task, I explored the permissions of the `projects` directory and the files it contains, including hidden files.
 
 1. Used the `ls` command to list the contents of the current directory. The output confirmed the presence of the `projects` directory.
 
-2. Navigated into the `projects` directory using the command `cd projects`.
+2. Navigated to the `projects` directory using the command `cd projects`.
 
-3. Ran `ls -la` to review the permissions of all files in the directory, including hidden files.
+3. Ran `ls -la` to review the permissions of all files in the `projects` directory, including hidden files.
    
    ![Screenshot 2025-05-28 200018](https://github.com/user-attachments/assets/47ec596d-775c-4c07-8b5d-b1889cd3be1c)
 
@@ -59,9 +61,21 @@ I reviewed the permissions of the `.project_x.txt` file and found that both the 
 
   My organization requires that only the `researcher2` user have access to the drafts directory and its contents. To enforce this, execute permissions should be restricted exclusively to `researcher2`, with no access granted to others.
 
+I reviewed the permissions of the `draft` directory and found that **group** still had execute access, which should be limited to the user only. To comply with policy, my task is to remove execute permission from the **group** and ensure that only the user retains that privilege.
+
+1. Ran the `ls -l` command to display the file permissions and identified that the **group** on `drafts` directory still had **execute** permission, which needed to be removed.
+
+2. Used the command `chmod g-x drafts` to remove **execute** permission from the **group**.
+
+3. Ran `ls -l` again to verify that the changes were applied. The output confirmed that the permissions were updated correctly.
+   
+ ![Screenshot 2025-05-28 204443](https://github.com/user-attachments/assets/d7b5ee2a-74f4-4e1e-ad24-d451e1d8a236)
+
 
 _____
   ## Conclusion
+
+  I modified several file and directory permissions within the `projects` directory to align with my organization's access control requirements. I began by running `ls -la` to review the current permission settings, which guided my next steps. Based on this information, I used the `chmod` command multiple times to adjust permissions as needed.
 
 
 
