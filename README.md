@@ -14,7 +14,7 @@ In this scenario, we must examine and manage the permissions on the files in the
 The `researcher2` user is part of the `research_team group`. We must check the permissions for all files in the directory, including any hidden files, to make sure that permissions align with the authorization that should be given. When it doesn't, we must change the permissions.
 
 
-Here is the task: First, we'll check the user and group permissions for all files in the projects directory. Next, we'll check whether any files have incorrect permissions and change the permissions as needed. Finally, you’ll check the permissions of the `/home/researcher2/projects/drafts` directory and modify these permissions to remove any unauthorized access.
+Here is the task: First, we'll check the user and group permissions for all files in the projects directory. Next, we'll check whether any files have incorrect permissions and change the permissions as needed. Finally, we will check the permissions of the `/home/researcher2/projects/drafts` directory and modify these permissions to remove any unauthorized access.
   
   ___
 
