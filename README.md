@@ -59,7 +59,7 @@ I reviewed the permissions of the `.project_x.txt` file and found that both the 
 
   ### Task 4. Change directory permissions
 
-  My organization requires that only the `researcher2` user have access to the drafts directory and its contents. To enforce this, execute permissions should be restricted exclusively to `researcher2`, with no access granted to others.
+  My organization requires that only the `researcher2` 'user' have access to the drafts directory and its contents. To enforce this, execute permissions should be restricted exclusively to `researcher2`, with no access granted to others.
 
 I reviewed the permissions of the `draft` directory and found that **group** still had execute access, which should be limited to the user only. To comply with policy, my task is to remove execute permission from the **group** and ensure that only the user retains that privilege.
 
